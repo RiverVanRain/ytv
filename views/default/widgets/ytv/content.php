@@ -12,9 +12,22 @@
  */
 $widget = $vars["entity"];
 $query = $widget->query;
+$name = $widget->name;
+$description = $widget->description;
 
-if($query) {
-	?>
+if ($name) {
+?>
+<h2 class="ytv-head"><?php echo $name; ?></h2>
+<?php 
+}
+
+if ($description) {
+?>
+<h3 class="ytv-head"><?php echo $description; ?></h3>
+<?php 
+}
+if ($query) {
+?>
 	<div id="frame"></div>
 	<script>
 			$('#frame').ytv({

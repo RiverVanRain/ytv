@@ -11,11 +11,12 @@
  *
  */
 
-$english = array(
+return array(
 	'ytv:title' => "YouTube TV",
 	'ytv:description' => "Shows YouTube Video Playlists",
 	'widgets:ytv:not_configured' => "Please configure this widget",
 	'widgets:ytv:query' => "Add YouTube username",
+	'widgets:ytv:additional' => "Additional settings:",
+	'widgets:ytv:name' => "Add playlist title",
+	'widgets:ytv:description' => "Add playlist description",
 );
-		
-add_translation("en", $english);
